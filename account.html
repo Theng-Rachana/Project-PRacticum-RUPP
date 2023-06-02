@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/account.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">E-COMMERCE</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/product.html">home</a></li>
+                <li><a href="/product.html">store</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/account.html" class="active">account</a></li>
+                <li><a href="/contect.html">contect</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container-b">
+            <i class="fas fa-user-circle"></i>
+            <br>Account
+            <form id="myform">
+                
+                <div class="fill">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="fill">
+                    <input type="email" id="email" placeholder="Example@gmail.com" required>
+                </div>
+                <div class="fill">
+                    <input type="password" id="password" placeholder="Password">
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox" required>
+                    <p>Accept terms of use.</p>
+                </div>
+                <div class="submition">
+                    <div class="submit">
+                        <button type="submit" id="button" onclick="checkLoginAccount()">Login</button>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" id="button" onclick="addAccount()">Sign up</button>
+                    </div>
+                </div>
+                <div class="forget-password">
+                    <a href="">If you don`t remember your password click hare.</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="foot">
+        Connect with us
+        <div class="foot-container">
+            <div class="contect-a">
+                <i class="fa-brands fa-square-facebook"></i>
+                Theng Rachana
+            </div>
+            <div class="contect-a">
+                <i class="fa-brands fa-instagram"></i>
+                Theng Rachana
+            </div>
+            <div class="contect-a">
+                <i class="fa-regular fa-envelope"></i>
+                ThengRachana2821@gmail.com
+            </div>
+            <div class="contect-a">
+                <i class="fas fa-phone-alt"></i>
+                +855 884 557 626
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a3907842d7.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

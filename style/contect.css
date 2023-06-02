@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.logo{
+    font-size: 28px;
+    color: aliceblue;
+    font-weight: bold;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    text-transform: uppercase;
+    display: block;
+    color: aliceblue;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    color: black;
+    background: white;
+}
+.nav-bar ul li a.active {
+    color: black;
+    background: white;
+}
+.foot{
+    
+    width: 100%;
+    height: 20%;
+    background-color: rgb(48, 46, 46);
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 137px;
+    color: rgb(175, 178, 181);
+}
+.foot-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    padding-top: 2%;
+}
+.contect-a {
+    padding-right: 5%;
+    font-size: small;
+}
+.container{
+    
+    box-shadow: 3px 3px 10px 2px #c4c4c4;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-bottom: 70px;
+    width: 80%;
+    font-size: 30px;
+    height: 700px;
+    display: flex;
+}
+.container-b{
+    width: 50%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.underline{
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+}
+.b1{
+    width: 80%;
+    padding-inline: 20px;
+    padding-block: 60px;
+    font-size: 20px;
+}
+#myform{
+    width: 95%;
+}
+.fill{
+    padding-block: 10px;
+    width: 100%;
+}
+#mailusername{
+    padding-left: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    padding-block: 10px;
+    border-color: #000000;
+    width: 100%;
+}
+#mailemail{
+    padding-left: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    padding-block: 10px;
+    border-color: #000000;
+    width: 100%;
+}
+#message{
+    padding-left: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    padding-block: 10px;
+    width: 100%;
+    border-color: #000000;
+}
+#button{
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 30px;
+    border-color: #000000;
+    background-color: rgba(240, 248, 255, 0);
+}
+#button:hover{
+    width: 150px;
+    height: 50px;
+    border-radius: 30px;
+    border-color: #000000;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+.container-c{
+    width: 60%;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+
+}
+#map{
+    padding-top: 10px;
+    width: 100%;
+    height: 250px;
+    border: 0;
+}
+@media only screen and (max-width:920px){
+    header{
+        padding: 0 30px;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line{
+        width: 40px;
+        height: 5px;
+        background: white;
+        margin: 8px 0;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+    .foot-container{
+        display: block;
+    }
+    .contect-a{
+        padding-bottom: 30px;
+    }
+    .container{
+        display: block;
+    }
+    .b1{
+        width: 90%;
+        padding-inline: 10px;
+        padding-block: 0px;
+        font-size: 12px;
+        display: flex;
+    }
+    .doflex{
+        padding-top: 10px;
+        width: 100%;
+        display: flex;
+    }
+    .container-b{
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    .container-c{
+        width: 100%;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        padding-top:0px;
+        background-image: none;
+    
+    }
+    .foot{
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        height: 250px;
+        background-color: rgb(48, 46, 46);
+        text-align: center;
+        font-size: 25px;
+        padding-top: 2%;
+        color: rgb(175, 178, 181);
+    }
+    #map{
+        padding-top: 10px;
+        width: 100%;
+        height: 130px;
+        border: 0;
+    }
+}
