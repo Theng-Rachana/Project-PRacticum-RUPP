@@ -1,0 +1,22 @@
+{
+  "Products": [
+    {
+      "id": 1,
+      "Name": "T-shirt",
+      "Image": "https://m.media-amazon.com/images/I/61RwNzfxG9L._AC_UX569_.jpg",
+      "price": 20
+    },
+    {
+      "Name": "S-shirt",
+      "Image": "https://m.media-amazon.com/images/I/61SAeN7NNLL._AC_UY550_.jpg",
+      "price": 10,
+      "id": 2
+    },
+    {
+      "Name": "S-shirt",
+      "Image": "https://m.media-amazon.com/images/I/61OHYcqh3BL._AC_SX569._SX._UX._SY._UY_.jpg",
+      "price": 20,
+      "id": 3
+    }
+  ]
+}
