@@ -57,6 +57,7 @@ function addAccount(){
   button.addEventListener("click", function(){
     search = document.getElementById("search").value;
     console.log(search);
+    document.getElementById("products").innerHTML = search;
   });
 //   $(document).ready(() => {
 //     $('#products').html('');

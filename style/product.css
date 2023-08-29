@@ -75,6 +75,10 @@ body{
     border-style: none;
     padding: 10px;
 }
+#btn{
+    background: none;
+    border: none;
+}
 .fa-search {
     font-size: 30px;
     height: 40px;
