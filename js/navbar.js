@@ -52,17 +52,36 @@ function addAccount(){
 //     localStorage.setItem('Message',getmessage);
 //     alert("Thank you!");
 //   }
-
-
-  $(document).ready(() => {
-    $('#products').html('');
-    $.get("http://localhost:3000/Products", function(data, status){
-        $.each(data, function(key, product) {
-            $('#products').append(`
-                <card>
-                    <img src="${product.Image}">
-                </card>
-            `);
-        });
-    });
-});
+  let search = "none";
+  var button = document.getElementById('btn');
+  button.addEventListener("click", function(){
+    search = document.getElementById("search").value;
+    console.log(search);
+  });
+//   $(document).ready(() => {
+//     $('#products').html('');
+//     $.get("http://localhost:3000/Products", function(data, status){
+//       $.each(data, function(key, product) {
+//         if(search == product.title){
+//           $('#products').append(`
+//           <div class="items">
+//               <div>
+//                   <img src="${product.image}">
+//                   <h6>${product.title}</h6>
+//               </div>
+//           </div>
+//           `);
+//         }
+//         else{
+//           $('#products').append(`
+//           <div class="items">
+//               <div>
+//                   <img src="${product.image}">
+//                   <h6>${product.title}</h6>
+//               </div>
+//           </div>
+//           `);
+//         }
+//       });
+//     });
+// });
