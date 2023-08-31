@@ -98,7 +98,20 @@ body{
     width: 140px;
     /* align-items: center; */
 }
-
+.buttons{
+    height: 40px;
+}
+.hide {
+    display: none;
+  }
+.active {
+    background-color: #6759ff;
+    color: #ffffff;
+  }
+#btn3{
+    width: 80px;
+    height: 35px;
+}
 .container-3{
     width: 60%;
     height: 600px;
