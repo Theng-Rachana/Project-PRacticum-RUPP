@@ -11,6 +11,7 @@ function filterProduct(value){
   buttons.forEach((button) => {
   if(value.toUpperCase() == button.innerHTML.toUpperCase()){
     button.classList.add("active");
+    console.log(value);
   }
   else{
     button.classList.remove("active");
@@ -32,43 +33,7 @@ function filterProduct(value){
             </div>
             `);
             }
-            if(value.toLowerCase() == product.category){
-              $('#products').append(`
-              <div class="items">
-                <div class="fiximg"><img src="${product.image}"></div>
-                <h6>${product.title}</h6>
-                <div  class="btn-price">
-                <h5>$${product.price}</h5>
-                <button class="buy-btn">Buy Now</button>
-                </div>
-            </div>
-            `);
-            }
-            if(value.toLowerCase() == product.category){
-              $('#products').append(`
-              <div class="items">
-                <div class="fiximg"><img src="${product.image}"></div>
-                <h6>${product.title}</h6>
-                <div  class="btn-price">
-                <h5>$${product.price}</h5>
-                <button class="buy-btn">Buy Now</button>
-                </div>
-            </div>
-            `);
-            }
-            if(value.toLowerCase() == product.category){
-              $('#products').append(`
-              <div class="items">
-                <div class="fiximg"><img src="${product.image}"></div>
-                <h6>${product.title}</h6>
-                <div  class="btn-price">
-                <h5>$${product.price}</h5>
-                <button class="buy-btn">Buy Now</button>
-                </div>
-            </div>
-            `);
-            }
-            if(value == "all" || value == ""){
+            if(value == "all"){
               $('#products').append(`
               <div class="items">
                 <div class="fiximg"><img src="${product.image}"></div>
@@ -85,8 +50,12 @@ function filterProduct(value){
     });
 });    
 }
-
+// document.getElementById("btn").addEventListener("click", () => {
+//   let searchInput = document.getElementById("search-input").value;
+//   filterProduct();
+// });
 
 window.onload = () => {
   filterProduct("all");
 };
+
