@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/productmanagement.css">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">E-COMMERCE</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/product.html">home</a></li>
+                <li><a href="/product.html">store</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/account.html" >account</a></li>
+                <li><a href="/contect.html" >contect</a></li>
+                <li><a href="/productmanagement.html" class="active">Product Management</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="" id="form" style="text-align: center;align-items: center;">
+            <h3 style="padding-bottom: 40px;">Product products management</h3>
+            <h3>Product Title:</h3>
+            <input type="text" id="productNames" required placeholder="Product name" style="padding-inline: 10px;padding-block: 10px;border-radius: 10px;border: none;margin-bottom: 10px;background-color: gainsboro;">
+            <h3>Product price:</h3>
+            <input type="number" id="prices" required placeholder="Product sale price"style="padding-inline: 10px;padding-block: 10px;border-radius: 10px;border: none;margin-bottom: 10px;background-color: gainsboro;">
+            <h3>Product images</h3>
+            <input type="text" id="images" required placeholder="product Images"style="padding-inline: 10px;padding-block: 10px;border-radius: 10px;border: none;margin-bottom: 10px;background-color: gainsboro;">
+            <h3>Product category</h3>
+            <select name="" id="categories" style="padding-block:5px;width: 200px; margin-bottom: 20px;" required>
+                <option value="Man">Man</option>
+                <option value="Women">Women</option>
+                <option value="jewelery">jewelery</option>
+                <option value="electronics">electronics</option>
+            </select>
+            <!-- <input type="text" id="images" required placeholder="product Images"style="padding-inline: 10px;padding-block: 10px;border-radius: 10px;border: none;margin-bottom: 10px;background-color: gainsboro;"> -->
+            <button style="background-color: rgb(128, 255, 156);border-radius: 10px;height: 40px;padding-inline: 10px;border: 1px solid;cursor: pointer;margin-top: 0px;">Add New Product</button>
+        </form>
+    </div>
+    <h1 style="text-align: center;">Products list</h1>
+    <div class="listproducts">
+        <div id="card">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="/js/products_management.js"></script>
+</body>
+</html>

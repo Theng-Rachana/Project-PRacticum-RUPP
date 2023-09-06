@@ -1,9 +1,9 @@
-// //Navigation bar
-// hamburger = document.querySelector(".hamburger");
-// hamburger.onclick = function(){
-//         navBar = document.querySelector(".nav-bar");
-//         navBar.classList.toggle("active");
-// }
+//Navigation bar
+hamburger = document.querySelector(".hamburger");
+hamburger.onclick = function(){
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+}
 
 
 function filterProduct(value){
@@ -50,14 +50,11 @@ function filterProduct(value){
     });
 });    
 }
-// document.getElementById("btn").addEventListener("click", () => {
-//   let searchInput = document.getElementById("search-input").value;
-//   filterProduct();
-// });
 
 window.onload = () => {
   filterProduct("all");
 };
+
 
 // Function to save user data in Local Storage
 function saveUser(username, password,email) {
@@ -114,3 +111,4 @@ registerForm.addEventListener('submit', function (e) {
       document.getElementById('register-password').value = '';
   }
 });
+

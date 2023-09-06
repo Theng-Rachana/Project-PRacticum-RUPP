@@ -241,65 +241,18 @@
       }
     },
     {
-      "title": "DANVOUY Womens T Shirt Casual Cotton Short",
-      "price": 0,
-      "description": "95%Cotton,5%Spandex, Features: Casual, Short Sleeve, Letter Print,V-Neck,Fashion Tees, The fabric is soft and has some stretch., Occasion: Casual/Office/Beach/School/Home/Street. Season: Spring,Summer,Autumn,Winter.",
-      "category": "women",
-      "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
-      "rating": {
-        "rate": 3.6,
-        "count": 145
-      },
+      "title": "Dowinx Gaming Chair Breathable PU Leather Gamer Chair with Pocket Spring Cushion",
+      "price": "159",
+      "image": "https://m.media-amazon.com/images/I/71i4h79EuDL._AC_SX569_.jpg",
+      "category": "electronics",
       "id": 21
     },
     {
-      "title": "Opna Women's Short Sleeve Moisture",
-      "price": 7.95,
-      "description": "100% Polyester, Machine wash, 100% cationic polyester interlock, Machine Wash & Pre Shrunk for a Great Fit, Lightweight, roomy and highly breathable with moisture wicking fabric which helps to keep moisture away, Soft Lightweight Fabric with comfortable V-neck collar and a slimmer fit, delivers a sleek, more feminine silhouette and Added Comfort",
-      "category": "women",
-      "image": "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 146
-      },
+      "title": "Apple iPad (9th Generation)",
+      "price": "267.29",
+      "image": "https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_SX522_.jpg",
+      "category": "electronics",
       "id": 22
-    },
-    {
-      "title": "Amazon Essentials Men's Easy to Read Strap Watch",
-      "price": 19.2,
-      "description": "Buckle closure A classic, easy-to-read timepiece for everyday wear; 42mm case; band length inches MATERIAL Black faux leather strap with genuine leather backing for comfortable wear; buckle closure; mineral crystal lensDETAILS Matte black dial with silver tone luminous hands and easy to read white Arabic numerals; printed outer minute track; date calendar window at 3 o'clock; available in black/silver and brown/gold CARE: Water resistant to 100 Feet (30m); watches should be treated like jewelry; to best protect your watch, be sure to be conscious when spraying perfume, hair spray, etc.; a jewelry polishing cloth can be used to polish the watch and clean it of fingerprints",
-      "category": "jewelery",
-      "image": "https://m.media-amazon.com/images/I/81SkKZjDDyL._AC_UL600_FMwebp_QL65_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 146
-      },
-      "id": 23
-    },
-    {
-      "title": "Amazon Essentials Men's Easy to Read Strap Watch",
-      "price": 19.2,
-      "description": "Buckle closure A classic, easy-to-read timepiece for everyday wear; 42mm case; band length inches MATERIAL Black faux leather strap with genuine leather backing for comfortable wear; buckle closure; mineral crystal lensDETAILS Matte black dial with silver tone luminous hands and easy to read white Arabic numerals; printed outer minute track; date calendar window at 3 o'clock; available in black/silver and brown/gold CARE: Water resistant to 100 Feet (30m); watches should be treated like jewelry; to best protect your watch, be sure to be conscious when spraying perfume, hair spray, etc.; a jewelry polishing cloth can be used to polish the watch and clean it of fingerprints",
-      "category": "jewelery",
-      "image": "https://m.media-amazon.com/images/I/81SkKZjDDyL._AC_UL600_FMwebp_QL65_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 146
-      },
-      "id": 24
-    },
-    {
-      "title": "Amazon Essentials Men's Easy to Read Strap Watch",
-      "price": 19.2,
-      "description": "Buckle closure A classic, easy-to-read timepiece for everyday wear; 42mm case; band length inches MATERIAL Black faux leather strap with genuine leather backing for comfortable wear; buckle closure; mineral crystal lensDETAILS Matte black dial with silver tone luminous hands and easy to read white Arabic numerals; printed outer minute track; date calendar window at 3 o'clock; available in black/silver and brown/gold CARE: Water resistant to 100 Feet (30m); watches should be treated like jewelry; to best protect your watch, be sure to be conscious when spraying perfume, hair spray, etc.; a jewelry polishing cloth can be used to polish the watch and clean it of fingerprints",
-      "category": "jewelery",
-      "image": "https://m.media-amazon.com/images/I/81SkKZjDDyL._AC_UL600_FMwebp_QL65_.jpg",
-      "rating": {
-        "rate": 4.5,
-        "count": 146
-      },
-      "id": 25
     }
-  ],
-  "account": []
+  ]
 }
