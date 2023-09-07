@@ -86,16 +86,43 @@ search.addEventListener('click',function(){
   })
 })
 
-// Function to save user data in Local Storage
-function saveUser(username, password,email) {
-  const users = getUsers();
-  users.push({ username, password ,email});
-  localStorage.setItem('users', JSON.stringify(users));
+// Function to save user data in the JSON file
+async function saveUser(username, password, email) {
+  // Replace this URL with the URL of your JSON file
+  const jsonFileUrl = "http://localhost:8000/json/Myweb.postman_collection.json";
+
+  // Use fetch() to retrieve the data from the JSON file
+  const response = await fetch(jsonFileUrl);
+  const data = await response.json();
+
+  // Add the new user to the Accounts array
+  data.Accounts.push({
+    username,
+    password,
+    email,
+    role: "user",
+  });
+
+  // Use fetch() to update the JSON file with the new data
+  await fetch(jsonFileUrl, {
+    method: "POST", ///////<-------THIIIS
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
 }
 
-// Function to retrieve user data from Local Storage
+
+// Function to retrieve user data from the JSON file
 function getUsers() {
-  return JSON.parse(localStorage.getItem('users')) || [];
+  // Replace this URL with the URL of your JSON file
+  const jsonFileUrl = "http://localhost:8000/json/Myweb.postman_collection.json";
+
+  // Use fetch() to retrieve the data from the JSON file
+  return fetch(jsonFileUrl)
+    .then((response) => response.json())
+    .then((data) => data.Accounts);
 }
 
 // Function to check if a user with the same username exists
@@ -106,21 +133,27 @@ function userExists(username) {
 
 // Login form
 const loginForm = document.getElementById('login-form');
-loginForm.addEventListener('submit', function (e) {
+loginForm.addEventListener('submit', async function (e) {
   e.preventDefault();
   
   const username = document.getElementById('login-username').value;
   const password = document.getElementById('login-password').value;
   
-  const users = getUsers();
+  const users = await getUsers();
   const user = users.find(u => u.username === username && u.password === password);
 
   if (user) {
       alert('Login successful!');
+      if (user.role === "admin") {
+        window.location.href = "/admin.html";
+      } else if (user.role === "user") {
+        window.location.href = "/user.html";
+      }
   } else {
       alert('Invalid username or password.');
   }
 });
+
 
 // Register form
 const registerForm = document.getElementById('register-form');

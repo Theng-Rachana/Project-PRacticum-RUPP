@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/account.css">
+    <title>Admin Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="logo">E-COMMERCE</div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="/index.html">home</a></li>
+                <li><a href="/product.html">store</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/account.html">account</a></li>
+                <li><a href="/productmanagement.html" class="active">Product Management</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <h1>Product Management</h1>
+            <!-- Form for adding a new product -->
+            <form id="add-product-form">
+                <h2>Add New Product</h2>
+                <input type="text" id="product-name" placeholder="Product Name" required>
+                <input type="text" id="product-description" placeholder="Product Description" required>
+                <input type="number" id="product-price" placeholder="Product Price" required>
+                <!-- Add more inputs as needed for your product data -->
+                <button type="submit">Add Product</button>
+            </form>
+
+            <!-- Form for updating an existing product -->
+            <!-- You could add a dropdown to select the product to update -->
+            <!-- You could also add buttons or links to delete products -->
+        </div>
+    </div>
+
+    <!-- Include your JavaScript files here -->
+    <!-- You will need to write JavaScript to handle form submissions and interact with your JSON file -->
+    <!-- For example, when the add product form is submitted, you could use JavaScript to read the data from the form, create a new product object, and add it to your JSON file -->
+
+    <script src="https://kit.fontawesome.com/a3907842d7.js"></script>
+    <script src="/js/navbar.js"></script>
+</body>
+</html>
