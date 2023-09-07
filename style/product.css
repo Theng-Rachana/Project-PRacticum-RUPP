@@ -76,8 +76,8 @@ body{
     border-style: none;
     padding: 10px;
 }
-#btn{
-    background: none;
+#searchbtn{
+    /* background: none; */
     border: none;
 }
 .fa-search {

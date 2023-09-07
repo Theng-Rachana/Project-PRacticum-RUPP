@@ -5,7 +5,7 @@ hamburger.onclick = function(){
         navBar.classList.toggle("active");
 }
 
-
+// product filters
 function filterProduct(value){
   let buttons = document.querySelectorAll("#btn3");
   buttons.forEach((button) => {
@@ -55,6 +55,36 @@ window.onload = () => {
   filterProduct("all");
 };
 
+// product search
+var search = document.getElementById('searchbtn');
+search.addEventListener('click',function(){
+  var inputdata = document.getElementById('search').value;
+  var textsize = inputdata.length;
+  console.log(textsize);
+  // var str = inputdata[0];
+  // console.log(str.toUpperCase());
+  $(document).ready(()=>{
+  $('#products').html('');
+    $.get('http://localhost:3000/Products',function(data,status){
+      count = 0;
+      $.each(data,function(key,produsts){
+          if(inputdata[0].toUpperCase() == produsts.title[0].toUpperCase()){
+            $('#products').append(`
+                <div class="items">
+                  <div class="fiximg"><img src="${produsts.image}"></div>
+                  <h6>${produsts.title}</h6>
+                <div  class="btn-price">
+                  <h5>$${produsts.price}</h5>
+                  <button class="buy-btn">Buy Now</button>
+                  </div>
+              </div>
+            `);
+            count++;
+          }
+      })
+    })
+  })
+})
 
 // Function to save user data in Local Storage
 function saveUser(username, password,email) {

@@ -253,6 +253,13 @@
       "image": "https://m.media-amazon.com/images/I/61NGnpjoRDL._AC_SX522_.jpg",
       "category": "electronics",
       "id": 22
+    },
+    {
+      "title": "Apple Smart Keyboard Folio",
+      "price": "123.63",
+      "image": "https://m.media-amazon.com/images/I/61DOF+Gj5pL._AC_SX342_SY445_.jpg",
+      "category": "electronics",
+      "id": 23
     }
   ]
 }
