@@ -254,5 +254,17 @@
       "category": "electronics",
       "id": 22
     }
-  ]
+  ],
+  "Accounts": [
+      {
+        "username": "admin1",
+        "password": "password1",
+        "role": "admin"
+      },
+     { 
+        "username": "user1",
+        "password": "password2",
+        "role": "user"
+      }
+    ]
 }
