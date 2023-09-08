@@ -57,6 +57,7 @@ window.onload = () => {
 
 // product search
 var search = document.getElementById('searchbtn');
+if(search){
 search.addEventListener('click',function(){
   var inputdata = document.getElementById('search').value;
   var textsize = inputdata.length;
@@ -85,6 +86,7 @@ search.addEventListener('click',function(){
     })
   })
 })
+}
 
 // Function to save user data in the JSON server
 function saveUser(username, password, email) {
@@ -104,9 +106,13 @@ function saveUser(username, password, email) {
 
 // Function to retrieve user data from the JSON server
 function getUsers() {
-  // Use AJAX to retrieve the data from the JSON server
-  return $.get('http://localhost:3000/Accounts');
+  return $.ajax({
+    url: 'http://localhost:3000/Accounts',
+    method: 'GET',
+    dataType: 'json'
+  });
 }
+
 
 // Function to check if a user with the same username exists
 function userExists(username) {
