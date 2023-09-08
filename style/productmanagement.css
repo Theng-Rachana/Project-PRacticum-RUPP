@@ -123,7 +123,7 @@ header{
     justify-content: space-between;
     align-items: center;
     border: 1px solid ;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     display: flex;
     flex-direction: row;
     padding-left: 10px;
@@ -132,11 +132,15 @@ img{
     width: 55px;
     height: 55px;
 }
+.warn h2{
+    padding-left: 100px;
+    width: 100%;
+}
 #deletebtn{
     width: 100px;
     background-color: rgb(249, 108, 108);
     height: 70px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 #form{
     width: 600px;
