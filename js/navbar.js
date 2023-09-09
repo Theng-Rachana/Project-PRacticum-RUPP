@@ -135,7 +135,7 @@ loginForm.addEventListener('submit', function (e) {
     if (user) {
       alert('Login successful!');
       if (user.role === "admin") {
-        window.location.href = "/admin.html";
+        window.location.href = "/productmanagement.html";
 
       }
     } else {
